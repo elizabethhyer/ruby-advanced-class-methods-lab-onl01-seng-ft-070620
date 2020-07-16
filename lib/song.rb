@@ -50,8 +50,6 @@ class Song
 
 end
 
-#build class method "alphabetical" - returns all songs in ascending a-z order
-
 #build class constructor "new_from_filename" - accepts filename in format of "-.mp3" 
 #constructor should return a new song instance with only relevant components (song name and artist name)
 #separate the artist name from the rest of the data based on the - delimiter
