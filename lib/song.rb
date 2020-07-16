@@ -40,7 +40,7 @@ class Song
    name_and_artist = mp3.split(" - ")
    artist = artist[0]
    song_name = song_name[1]
-   
+   binding.pry
   end 
   
   def self.create_from_filename
