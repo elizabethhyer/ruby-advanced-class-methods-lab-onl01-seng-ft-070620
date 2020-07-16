@@ -41,7 +41,8 @@ class Song
    artist_name = name_and_artist[0]
    name = name_and_artist[1].chomp(".mp3")
    song = self.new
-   name.name = song
+   song.name = name
+   song.artist_name = artist_name
   end 
   
   def self.create_from_filename
