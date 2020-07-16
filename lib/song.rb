@@ -63,12 +63,12 @@ class Song
   def save
     self.class.all << self
   end
+  
+  def self.destroy_all
+    self.all.delete
+  end 
 
 end
-
-#build class method "destroy_all" - should reset the state of @@all class variable to an empty Array
-#delete all previous song instances 
-
 
 
 
