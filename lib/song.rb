@@ -37,8 +37,8 @@ class Song
   end 
   
   def self.new_from_filename(mp3)
-   name_and_artist = mp3.split(".mp3")
-   
+   name_and_artist = mp3.split("-")
+   binding.pry
   end 
   
   def self.create_from_filename
