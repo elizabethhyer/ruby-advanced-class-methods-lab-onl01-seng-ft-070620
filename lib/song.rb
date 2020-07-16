@@ -39,8 +39,7 @@ class Song
   def self.new_from_filename(mp3)
    name_and_artist = mp3.split(" - ")
    artist_name = name_and_artist[0]
-   name = name_and_artist[1]
-   name.chomp(".mp3")
+   name = name_and_artist[1].chomp
    binding.pry
   end 
   
