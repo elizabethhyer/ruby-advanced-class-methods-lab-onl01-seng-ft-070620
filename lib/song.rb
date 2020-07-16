@@ -38,8 +38,8 @@ class Song
   
   def self.new_from_filename(mp3)
    name_and_artist = mp3.split(" - ")
-   artist = artist[0]
-   song_name = song_name[1]
+   artist_name = artist[0]
+   name = song_name[1]
    binding.pry
   end 
   
