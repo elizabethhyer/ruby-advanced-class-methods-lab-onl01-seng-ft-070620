@@ -41,7 +41,6 @@ class Song
    artist_name = name_and_artist[0]
    name = name_and_artist[1]
    name.split(".mp3")
-   binding.pry
   end 
   
   def self.create_from_filename
