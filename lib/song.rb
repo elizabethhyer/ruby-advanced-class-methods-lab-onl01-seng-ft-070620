@@ -47,13 +47,12 @@ class Song
   end 
   
   def self.create_from_filename(mp3)
-     name_and_artist = mp3.split(" - ")
+    name_and_artist = mp3.split(" - ")
     artist_name = name_and_artist[0]
     name = name_and_artist[1].chomp(".mp3")
     song = self.new
     song.name = name
     song.artist_name = artist_name
-    song
     song.save 
   end 
 
@@ -66,14 +65,6 @@ class Song
   end
 
 end
-
-#build class constructor "new_from_filename" - accepts filename in format of "-.mp3" 
-#constructor should return a new song instance with only relevant components (song name and artist name)
-#separate the artist name from the rest of the data based on the - delimiter
-#parse song name and remove '.mp3'
-
-#build class constructor "create_from_filename" - accepts a file name in the format of "-.mp3" 
-#parse filename corrects and save song instance created 
 
 #build class method "destroy_all" - should reset the state of @@all class variable to an empty Array
 #delete all previous song instances 
